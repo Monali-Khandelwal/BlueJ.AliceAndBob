@@ -16,7 +16,19 @@ public class AliceAndBobEngine
     //HINT: LOOK AT THE TESTS TO SEE WHAT IS EXPECTED FOR DIFFERENT CONDITIONS
     public String evaluateAliceOrBob(String input)
     {
-    
+       // Check to see if the input value matches Alice
+        if (input.equals ("Alice")){
+            result = "Hello Alice";
+        }
+        else if (input.equals ("Bob")) // check to see if the input value matches Bob
+        {
+        result = "Hello Bob";
+        }
+        else // if the input value is other than Alice or Bob
+        {
+        result = "I DON'T KNOW YOU, YOU ARE SCARY";
+        }
+        
         return result;
     }
 }
